@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family= Krona +One & display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Krona+One & family= Libre+Baskerville:wght@700 & display=swap') ;
+@import url('https://fonts.googleapis.com/css2? family= Anton & family= Krona+One & family=Libre+Baskerville:wght@700 & display=swap');
+
+:root {
+    --cor-primaria: bisque;
+    --cor-secundaria: #FA6F4D;
+    --cor-tercearia: #E8B9A7;
+    --cor-strong: #A83F2A;
+    --cor-destaque: #DE4643;
+    --cor-span: #A83F2A;
+}
+
+
+body {
+    /* height: 100vh; determina a altura da area do conteudo, vh = viewport */
+    box-sizing: border-box; /*utilizada para alterar a propriedade padrão da box model, usada para calcular larguras e alturas dos elementos.*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu {
+   display: flex;
+   gap: 80px;
+
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 18%;
+}
+.cabecalho__menu__link {
+    color:var(--cor-secundaria);
+    font-family: 'Anton', sem serifa;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    text-shadow: 4px 4px 4px var(--cor-tercearia)
+}
+
+strong {
+    color: var(--cor-strong);
+}
+.destaque-texto {
+    color: var(--cor-destaque);
+}
+i {
+    color: var(--cor-destaque);
+}
+h1 {
+    font-weight: bold;
+}
+
+span {
+    color: var(--cor-span);
+    border: 1px inset var(--cor-span);
+}
+
+.apresentacao__img{
+    padding: 50px
+}
+
+.apresentacao__curriculo {
+   padding: 20px;
+   gap: 15px;
+   justify-content: space-between;
+}
+
+.apresentacao__curriculo__conteudo {
+    justify-content:space-around ;
+    gap: 20px;
+}
+
+.apresentacao__curriculo__conteudo__texto{
+    font-family: 'krona one', sans-serif ;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.apresentacao2 {
+    padding: 4% 15% 8%;
+    display: flexbox; /* modo de disponibilizar os elementos na pg*/
+    align-items: flex-end;
+    justify-content: space-around; /*exibe os itens flexíveis com espaço antes, entre e depois das linhas*/
+    gap: 10px;
+}
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex; /* modo de disponibilizar os elementos na pg*/
+    align-items: center;
+    justify-content: space-around; /*exibe os itens flexíveis com espaço antes, entre e depois das linhas*/
+    gap: 10px;
+}
+.apresentacao__subtitulo {
+    font-family: 'krona one', sans-serif ;
+    font-weight: 400;
+    font-size: 24px; /* muda o tamanho da fonte*/
+}
+.apresentacao__conteudo {
+    width: 815px; /* largura*/
+    height: 682px; /* altura*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* espaçamento entre linhas e colunas*/
+}
+.apresentacao__conteudo__titulo {
+    font-family: 'Anton', sem serifa;
+    font-weight: 700; /* especifica o peso da fonte, tipo um negrito*/
+    font-size: 46px;
+    text-shadow: 4px 4px 4px #aaa; /* sombreamento do texto*/
+    padding: 15px;
+}
+.apresentacao__conteudo__texto {
+    font-family: 'krona one', sans-serif ;
+    font-size: 32px;
+}
+.apresentacao__links {
+    display: flex;
+    flex-direction: column; /* modo que dilponibiliza os conteudos em linha vertical*/ 
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: 'krona one', sans-serif ;
+    font-size: 23px;
+}
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;/* modo que disponibiliza os conteudos do container da tag display*/
+    gap: 16px;
+    background-color: #ffe4c4;
+    text-align: center;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+    width: 378px; /* tamanho do botão*/
+    border-radius: 8px; /* arredondamento das bordas*/
+    font-size: 30px;
+    padding: 21.5px 0; /* distanci do conteudo para a borda */
+    text-decoration: none;
+    border: 2px solid var(--cor-destaque); /* espessura, estilo e cor da borda de um botão*/
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-tercearia);
+    width: 400px;
+}
+
+.rodape {
+    color: black;
+    background-color: var(--cor-tercearia);
+    padding: 30px;
+    text-align: center;
+    font-family: 'Anton', sem serifa;
+    font-size: 30px;
+    font-weight: 700;
+}
+
